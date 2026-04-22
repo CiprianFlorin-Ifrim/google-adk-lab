@@ -1,6 +1,6 @@
 # Google ADK Agent Exploration Lab
 
-A hands-on exploration of Google Agent Development Kit (ADK) 1.31.1 across nine Jupyter notebooks. Covers every ADK primitive, delegation pattern, inter-agent protocol, and observability approach -- from single agents to multi-level orchestration graphs with mixed model tiers.
+A hands-on exploration of Google Agent Development Kit (ADK) 1.31.1 across nine Jupyter notebooks. Covers every ADK primitive, delegation pattern, inter-agent protocol, and observability approach, from single agents to multi-level orchestration graphs with mixed model tiers.
 
 
 ## What This Covers
@@ -32,8 +32,8 @@ A hands-on exploration of Google Agent Development Kit (ADK) 1.31.1 across nine 
 
 Two tiers used throughout:
 
-- Standard: `gemini-3-flash-preview` -- orchestrators and complex reasoning.
-- Lite: `gemini-3.1-flash-lite-preview` -- leaf agents, single tool calls, fast and cheap.
+- Standard: `gemini-3-flash-preview` - orchestrators and complex reasoning.
+- Lite: `gemini-3.1-flash-lite-preview` - leaf agents, single tool calls, fast and cheap.
 
 Configured as plain strings in `config.py`. No LiteLlm wrapper needed for Gemini API models.
 
