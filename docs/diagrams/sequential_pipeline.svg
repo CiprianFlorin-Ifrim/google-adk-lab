@@ -1,0 +1,54 @@
+<svg viewBox="0 0 1000 260" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!-- User Query -->
+  <rect x="20" y="90" width="130" height="80" fill="#1a1a2e" stroke="#333" stroke-width="2"/>
+  <text x="85" y="122" text-anchor="middle" fill="white" font-size="13" font-weight="bold">User Query</text>
+  <text x="85" y="145" text-anchor="middle" fill="#cccccc" font-size="11" font-weight="bold">text input</text>
+
+  <!-- Arrow 1 -->
+  <line x1="150" y1="130" x2="205" y2="130" stroke="#333" stroke-width="2"/>
+  <polygon points="205,124 220,130 205,136" fill="#333"/>
+
+  <!-- SequentialAgent wrapper -->
+  <rect x="220" y="20" width="570" height="220" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="8,4" rx="0"/>
+  <text x="505" y="15" text-anchor="middle" fill="#666" font-size="12" font-weight="bold">SequentialAgent</text>
+
+  <!-- Agent A -->
+  <rect x="240" y="60" width="150" height="140" fill="#5b9bd5" stroke="#333" stroke-width="2"/>
+  <text x="315" y="100" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Agent A</text>
+  <text x="315" y="122" text-anchor="middle" fill="#1a3a5c" font-size="11" font-weight="bold">mortgage calc</text>
+  <rect x="260" y="140" width="110" height="35" fill="#2d6a4f" stroke="#1a5c3a" stroke-width="1.5"/>
+  <text x="315" y="163" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Tools</text>
+
+  <!-- Arrow A->B with state key -->
+  <line x1="390" y1="130" x2="445" y2="130" stroke="#333" stroke-width="2"/>
+  <polygon points="445,124 460,130 445,136" fill="#333"/>
+  <text x="418" y="118" text-anchor="middle" fill="#e07a3a" font-size="10" font-weight="bold">state["a"]</text>
+
+  <!-- Agent B -->
+  <rect x="460" y="60" width="150" height="140" fill="#5b9bd5" stroke="#333" stroke-width="2"/>
+  <text x="535" y="100" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Agent B</text>
+  <text x="535" y="122" text-anchor="middle" fill="#1a3a5c" font-size="11" font-weight="bold">risk assessment</text>
+  <rect x="480" y="140" width="110" height="35" fill="#2d6a4f" stroke="#1a5c3a" stroke-width="1.5"/>
+  <text x="535" y="163" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Tools</text>
+
+  <!-- Arrow B->C with state key -->
+  <line x1="610" y1="130" x2="665" y2="130" stroke="#333" stroke-width="2"/>
+  <polygon points="665,124 680,130 665,136" fill="#333"/>
+  <text x="638" y="118" text-anchor="middle" fill="#e07a3a" font-size="10" font-weight="bold">state["b"]</text>
+
+  <!-- Agent C -->
+  <rect x="680" y="75" width="90" height="110" fill="#5b9bd5" stroke="#333" stroke-width="2"/>
+  <text x="725" y="118" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Agent C</text>
+  <text x="725" y="140" text-anchor="middle" fill="#1a3a5c" font-size="11" font-weight="bold">summary</text>
+
+  <!-- Arrow out -->
+  <line x1="790" y1="130" x2="845" y2="130" stroke="#333" stroke-width="2"/>
+  <polygon points="845,124 860,130 845,136" fill="#333"/>
+
+  <!-- Response -->
+  <rect x="860" y="90" width="120" height="80" fill="#1a1a2e" stroke="#333" stroke-width="2"/>
+  <text x="920" y="122" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Response</text>
+  <text x="920" y="145" text-anchor="middle" fill="#cccccc" font-size="11" font-weight="bold">final answer</text>
+
+</svg>

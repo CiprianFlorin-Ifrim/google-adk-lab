@@ -1,0 +1,30 @@
+<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  
+  <!-- User Query -->
+  <rect x="20" y="60" width="160" height="80" fill="#1a1a2e" stroke="#333" stroke-width="2"/>
+  <text x="100" y="92" text-anchor="middle" fill="white" font-size="14" font-weight="bold">User Query</text>
+  <text x="100" y="115" text-anchor="middle" fill="#cccccc" font-size="12" font-weight="bold">text input</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="180" y1="100" x2="270" y2="100" stroke="#333" stroke-width="2"/>
+  <polygon points="270,94 285,100 270,106" fill="#333"/>
+  
+  <!-- LlmAgent -->
+  <rect x="285" y="30" width="230" height="140" fill="#5b9bd5" stroke="#333" stroke-width="2"/>
+  <text x="400" y="65" text-anchor="middle" fill="white" font-size="15" font-weight="bold">LlmAgent</text>
+  <text x="400" y="88" text-anchor="middle" fill="#1a3a5c" font-size="12" font-weight="bold">instruction + reasoning</text>
+  
+  <!-- Tools box inside agent -->
+  <rect x="310" y="105" width="180" height="45" fill="#2d6a4f" stroke="#1a5c3a" stroke-width="1.5"/>
+  <text x="400" y="133" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Tools</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="515" y1="100" x2="600" y2="100" stroke="#333" stroke-width="2"/>
+  <polygon points="600,94 615,100 600,106" fill="#333"/>
+  
+  <!-- Response -->
+  <rect x="615" y="60" width="160" height="80" fill="#1a1a2e" stroke="#333" stroke-width="2"/>
+  <text x="695" y="92" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Response</text>
+  <text x="695" y="115" text-anchor="middle" fill="#cccccc" font-size="12" font-weight="bold">final answer</text>
+  
+</svg>

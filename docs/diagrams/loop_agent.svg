@@ -1,0 +1,60 @@
+<svg viewBox="0 0 880 270" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!-- All blocks vertically centered at y=110 -->
+
+  <!-- User Query -->
+  <rect x="20" y="70" width="130" height="80" fill="#1a1a2e" stroke="#333" stroke-width="2"/>
+  <text x="85" y="102" text-anchor="middle" fill="white" font-size="13" font-weight="bold">User Query</text>
+  <text x="85" y="125" text-anchor="middle" fill="#cccccc" font-size="11" font-weight="bold">text input</text>
+
+  <!-- Arrow User Query -> Proposer -->
+  <line x1="150" y1="110" x2="215" y2="110" stroke="#333" stroke-width="2"/>
+  <polygon points="209,104 215,110 209,116" fill="#333"/>
+
+  <!-- LoopAgent wrapper -->
+  <rect x="195" y="15" width="490" height="230" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <text x="440" y="8" text-anchor="middle" fill="#666" font-size="12" font-weight="bold">LoopAgent  (max_iterations=3)</text>
+
+  <!-- Proposer -->
+  <rect x="215" y="35" width="170" height="150" fill="#5b9bd5" stroke="#333" stroke-width="2"/>
+  <text x="300" y="80" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Proposer</text>
+  <text x="300" y="102" text-anchor="middle" fill="#1a3a5c" font-size="11" font-weight="bold">reads {feedback}</text>
+  <rect x="235" y="118" width="130" height="30" fill="#2d6a4f" stroke="#1a5c3a" stroke-width="1.5"/>
+  <text x="300" y="138" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Tools</text>
+
+  <!-- Arrow Proposer -> Critic -->
+  <line x1="385" y1="110" x2="475" y2="110" stroke="#333" stroke-width="2"/>
+  <polygon points="469,104 475,110 469,116" fill="#333"/>
+
+  <!-- State proposal label -->
+  <text x="430" y="100" text-anchor="middle" fill="#e07a3a" font-size="10" font-weight="bold">state["proposal"]</text>
+
+  <!-- Critic -->
+  <rect x="475" y="35" width="170" height="150" fill="#5b9bd5" stroke="#333" stroke-width="2"/>
+  <text x="560" y="80" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Critic</text>
+  <text x="560" y="102" text-anchor="middle" fill="#1a3a5c" font-size="11" font-weight="bold">evaluates proposal</text>
+  <rect x="495" y="118" width="130" height="30" fill="#2d6a4f" stroke="#1a5c3a" stroke-width="1.5"/>
+  <text x="560" y="138" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Tools</text>
+
+  <!-- Loop-back arrow: Critic -> down -> left -> up -> Proposer -->
+  <line x1="560" y1="185" x2="560" y2="210" stroke="#333" stroke-width="2"/>
+  <line x1="560" y1="210" x2="300" y2="210" stroke="#333" stroke-width="2"/>
+  <line x1="300" y1="210" x2="300" y2="185" stroke="#333" stroke-width="2"/>
+  <polygon points="294,191 300,185 306,191" fill="#333"/>
+
+  <!-- Feedback label -->
+  <text x="430" y="225" text-anchor="middle" fill="#e07a3a" font-size="10" font-weight="bold">state["feedback"]</text>
+
+  <!-- Loop condition label -->
+  <text x="430" y="200" text-anchor="middle" fill="#888" font-size="9" font-weight="bold">loop until APPROVED or max iterations</text>
+
+  <!-- Arrow Critic -> Response -->
+  <line x1="645" y1="110" x2="710" y2="110" stroke="#333" stroke-width="2"/>
+  <polygon points="704,104 710,110 704,116" fill="#333"/>
+
+  <!-- Response -->
+  <rect x="710" y="70" width="130" height="80" fill="#1a1a2e" stroke="#333" stroke-width="2"/>
+  <text x="775" y="102" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Response</text>
+  <text x="775" y="125" text-anchor="middle" fill="#cccccc" font-size="11" font-weight="bold">final answer</text>
+
+</svg>

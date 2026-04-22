@@ -1,0 +1,25 @@
+# ADK environment requirements
+# Pinned lower bounds to avoid the litellm supply chain incident (1.82.7, 1.82.8).
+# Latest LiteLLM v1.83.0 released on April 19 2026.
+# Latest GADK v1.31.1 released on April 21 2026.
+# Latest Ollama v0.21.0 used for this research was released on April 17 2026.
+
+# Core
+google-adk>=1.31.1
+litellm>=1.83.0,!=1.82.7,!=1.82.8
+'google-adk[a2a]'
+python-dotenv
+langgraph langchain-google-genai      # Different library needed depending on the model provider
+opentelemetry-api
+opentelemetry-sdk
+aiosqlite
+
+# Notebook
+jupyterlab>=4.0
+ipykernel>=6.0
+
+# Data and visualisation
+pandas>=2.0
+matplotlib>=3.8
+seaborn>=0.13
+numpy>=1.24
